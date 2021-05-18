@@ -100,7 +100,7 @@ FocusNode focusNode;
                               _form.currentState.save();
                               context.read(checkProvider.notifier).toggle();
                               focusNode.unfocus();
-                           Future.delayed(Duration(seconds: 1), (){
+                           Future.delayed(Duration(seconds: 2), (){
                              textController.clear();
                            });
                             }, child: Text('Search')
