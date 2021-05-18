@@ -16,7 +16,7 @@ class _WeatherAppState extends State<WeatherApp> {
   Future getWeather() async{
     Position position = await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
     final response = await http.get(Uri.parse
-      ('http://api.openweathermap.org/data/2.5/weather?lat=${position.latitude}&lon=${position.longitude}&appid=28672904e896d932cc2ed25e060eb963'));
+      ('http://api.openweathermap.org/data/2.5/weather?lat=${position.latitude}&lon=${position.longitude}&appid=28672904e8999g932cc2ed25e060eb963'));
     final data = jsonDecode(response.body);
    return data;
   }
